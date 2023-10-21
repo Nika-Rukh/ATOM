@@ -1,6 +1,6 @@
 ---
-name: Test case template
-about: Describe this issue template's purpose here.
+name: Bug report
+about: Describe bug.
 title: ''
 labels: ''
 assignees: ''
