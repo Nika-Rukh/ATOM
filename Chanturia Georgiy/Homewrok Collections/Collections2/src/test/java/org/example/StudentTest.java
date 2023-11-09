@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.example.Student.printStudentsByCourse;
+import static org.example.Student.getStudentsByCourse;
 import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTest {
@@ -23,7 +23,7 @@ class StudentTest {
 
         String expected1 = "\nStudents in course 2:\n" + "Jhon\n" +
                 "Anastasiya";
-        String actual1 = printStudentsByCourse(students1, 2);
+        String actual1 = getStudentsByCourse(students1, 2);
 
         assertEquals(expected1, actual1);
 
@@ -31,7 +31,7 @@ class StudentTest {
         List<Student> students2 = new ArrayList<>();
 
         String expected2 = "The list of students is empty!";
-        String actual2 = printStudentsByCourse(students2, 1);
+        String actual2 = getStudentsByCourse(students2, 1);
 
         assertEquals(expected2, actual2);
 
@@ -45,7 +45,7 @@ class StudentTest {
         students3.add(new Student("Anastasiya", 2));
 
         String expected3 = "On " + 5 + " course no students";
-        String actual3 = printStudentsByCourse(students3, 5);
+        String actual3 = getStudentsByCourse(students3, 5);
 
         assertEquals(expected3, actual3);
     }

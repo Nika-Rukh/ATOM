@@ -3,7 +3,7 @@ package org.example;
 
 import java.util.*;
 
-import static org.example.Student.printStudentsByCourse;
+import static org.example.Student.getStudentsByCourse;
 
 public class Main {
     public static String printStudent(List<Student> students){
@@ -35,6 +35,6 @@ public class Main {
         System.out.println("\nStudents ordered by course:");
         System.out.println(printStudent(students));
 
-        System.out.println(printStudentsByCourse(students, 2));
+        System.out.println(getStudentsByCourse(students, 2));
     }
 }

@@ -40,7 +40,7 @@ public class Student {
         return Integer.compare(this.course, student.course);
     }
 
-    public static String printStudentsByCourse(List<Student> students, int course) {
+    public static String getStudentsByCourse(List<Student> students, int course) {
         if(students.isEmpty()){
             return "The list of students is empty!";
         }
