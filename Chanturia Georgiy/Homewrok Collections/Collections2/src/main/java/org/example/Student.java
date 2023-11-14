@@ -41,13 +41,16 @@ public class Student {
     }
 
     public static String getStudentsByCourse(List<Student> students, int course) {
-        if(students.isEmpty()){
+        Iterator<Student> iterator = students.iterator();
+        List<String> listStudent = new ArrayList<>();
+
+        if(iterator.hasNext()){
+            listStudent.add("\nStudents in course " + course + ":");
+        }
+        else{
             return "The list of students is empty!";
         }
 
-        List<String> listStudent = new ArrayList<>();
-        listStudent.add("\nStudents in course " + course + ":");
-        Iterator<Student> iterator = students.iterator();
         while (iterator.hasNext()) {
             Student student = iterator.next();
             if (student.getCourse() == course) {
